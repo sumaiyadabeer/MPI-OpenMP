@@ -24,8 +24,8 @@ complexity of O(log n). <br />
 Makefile is provided with the code. The program can be executed by giving following
 command.
 ### Create executable file using:
-mpiCC -fopenmp -c -o sort.o sort.cpp sort.h
+mpiCC -fopenmp -c -o sort.o sort.cpp sort.h <br/>
 ar -rsc libpsort.a sort.o
 ### Run the tester code file using:
-mpicxx -fopenmp tester.cpp libpsort.a
+mpicxx -fopenmp tester.cpp libpsort.a  <br/>
 mpirun -n 64 a.out
